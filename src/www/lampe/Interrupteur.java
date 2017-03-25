@@ -8,4 +8,12 @@ public class Interrupteur {
 		this.lampe = lampe;
 	}
 
+	public String getPosition(){
+		if(position == true){
+			return "on";
+		}else{
+			return "off";
+		}
+	}
+	
 }
