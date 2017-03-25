@@ -2,16 +2,21 @@ package www.lampe;
 
 public class Lampe {
 	
-	private boolean estAllumee;
+	private boolean etat;
 	
 	public Lampe(boolean etat){
-		estAllumee = etat;
+		this.etat = etat;
 	}
+	
+	public boolean estAllumee(){
+		return etat;
+	}
+	
 	public void presserInterrupteur(){
-		if(estAllumee == true){
-			estAllumee = false;
+		if(etat == true){
+			etat = false;
 		}else{
-			estAllumee =true;
+			etat =true;
 		}
 		
 	}
