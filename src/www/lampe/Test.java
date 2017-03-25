@@ -7,10 +7,10 @@ public class Test {
 			System.out.println(lampe.estAllumee());//true
 			lampe.presserInterrupteur();
 			System.out.println(lampe.estAllumee());//false
-			
-			System.out.println(lampe.estAllumee());
 			lampe.presserInterrupteur();
-			System.out.println(lampe.estAllumee());
+			System.out.println(lampe.estAllumee());//true
+			lampe.presserInterrupteur();
+			System.out.println(lampe.estAllumee());//false
 	}
 
 }
