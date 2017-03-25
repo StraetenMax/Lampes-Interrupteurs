@@ -12,13 +12,16 @@ public class Lampe {
 		return etat;
 	}
 	
-	public void presserInterrupteur(){
+	/*public void presserInterrupteur(){
 		if(etat == true){
 			etat = false;
 		}else{
 			etat =true;
 		}
 		
+	}*/
+	public void modifierEtat(){
+		this.etat = ! this.etat;
 	}
 	
 	
