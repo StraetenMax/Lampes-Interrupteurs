@@ -6,6 +6,7 @@ public class Interrupteur {
 	
 	public Interrupteur(Lampe lampe){
 		this.lampe = lampe;
+		this.position = lampe.estAllumee();
 	}
 
 	public String getPosition(){
@@ -15,5 +16,8 @@ public class Interrupteur {
 			return "off";
 		}
 	}
-	
+	public void changerPosition(){
+		lampe.modifierEtat();
+		position = lampe.estAllumee();
+	}
 }
